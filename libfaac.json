@@ -1,0 +1,14 @@
+{
+    "name": "libfaac",
+    "description": "AAC-LC audio encoder (native libfaac)",
+    "filters":["encfaac"],
+    "help": "This filter encodes a raw S16 PCM audio PID to MPEG-4 AAC-LC by calling libfaac's native API directly. Output is raw AAC frames with an out-of-band AudioSpecificConfig, ready for mp4 muxing.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libfaac.accessor",
+    "filter_source":{
+        "encfaac" : "enc_aac.c"
+    },
+    "licence_required":false
+}
